@@ -1,0 +1,392 @@
+:root {
+    --primary-color: #ffffff;
+    --text-color: #e1e1e1;
+    --background-color: #1a1a1a;
+    --accent-color: #00ff00;
+    --link-color: #00ff00;
+    --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.site-header {
+    position: relative;
+    height: 300px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://vinay.sh/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.header-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.blog-posts {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.bullet-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.bullet-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.bullet-list li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.bullet-list ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.bullet-list ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-color);
+    border-top: 1px solid #eaeaea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .bullet-list li {
+        padding-left: 1rem;
+    }
+}
+
+.cat-logo {
+    width: 50px;  /* Reduced from 50px */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Optional additional styles to improve layout */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Adds some spacing between logo and text */
+}
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.game-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.help-text {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.9;
+}
+
+.game-board {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.status {
+    margin-bottom: 1rem;
+}
+
+.status p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.status p#statusText {
+    color: #666;
+}
+
+.status p#currentTarget {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+
+.mobile-number {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.instance-info div {
+    margin-bottom: 5px;
+}
+
+
+
+/* Add this to your styles.css */
+.instance-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instance-info {
+    margin-bottom: 10px;
+}
+
+.mobile-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.target, .balance {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.instance-stop-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.instance-stop-btn:hover {
+    background-color: #c0392b;
+}
