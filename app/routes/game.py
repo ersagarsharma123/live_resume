@@ -45,6 +45,7 @@ async def start_game(config: GameConfig, background_tasks: BackgroundTasks):
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--headless=new") 
         
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=chrome_options)
         wait = WebDriverWait(driver, 10)  # Initialize WebDriverWait here
